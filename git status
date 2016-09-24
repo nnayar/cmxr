@@ -1,0 +1,6 @@
+git status
+git add .
+git status
+git commit -m "res.writeHead"
+git status
+git push heroku master
