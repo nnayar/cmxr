@@ -1,6 +1,6 @@
 var listenport = Number(process.env.PORT || 3000 );   				//TCP listening port
 var secret = "testmeraki";											//Secret that you chose in the Meraki dashboard
-var validator = "fb626b98204dc2cde9f569e4e0e65fbaf37a441e";			//Validator string that is shown in the Meraki dashboard
+var validator = 'fb626b98204dc2cde9f569e4e0e65fbaf37a441e';			//Validator string that is shown in the Meraki dashboard
 
 var express = require('express');
 var http = require('https');
@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/meraki', function(req, res){
-  res.writeHead(200, {'Content-Type':'text/html'});
+  // res.writeHead(200, {'Content-Type':'text/html'});
   res.end(validator);
   console.log("sending validation")
 });
