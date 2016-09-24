@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //test step- to see what happens when I send a GET request from my browser
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('<h1> Hello World! </h1>');
 });
 
 /*
@@ -164,5 +164,5 @@ app.post('/meraki', function(req, res){
 
 app.listen(listenport, function(err) {
 	if (err) return console.log(err);
-	console.log("Meraki CMX Receiver listening on port at 1636: " + listenport);
+	console.log("Meraki CMX Receiver listening on port: " + listenport);
 });
