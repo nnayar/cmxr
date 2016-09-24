@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/meraki', function(req, res){
-  res.writeHead(200, {'Context-Type': 'text/html'});
+  res.writeHead(200, {'Content-Type': 'text/html'});
   res.send(validator);
   console.log("sending validation")
 });
