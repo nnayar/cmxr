@@ -20,13 +20,12 @@ app.get('/', function (req, res) {
   res.send('<h1> Hello World! </h1>');
 });
 
-/*
 app.get('/meraki', function(req, res){
   res.send(validator);
   console.log("sending validation")
 });
 
-
+/*
 app.post('/meraki', function(req, res){ 
 	try {
 		var jsoned = JSON.parse(req.body.data);
@@ -54,8 +53,8 @@ app.post('/meraki', function(req, res){
   }
   
 });
-*/
 
+*/
 /*
  * body-parser is a piece of express middleware that 
  *   reads a form's input and stores it as a javascript
